@@ -1,4 +1,4 @@
-package com.example.algorithm.coding;
+package com.example.algorithm.codingtest;
 
 import org.springframework.stereotype.Component;
 
@@ -8,6 +8,8 @@ import java.util.*;
 public class MatchingLottoClass {
 
     /**
+     * @date 2022.02.22
+     * @author : jiyun.kim
      * https://programmers.co.kr/learn/courses/30/lessons/77484
      * [로또의 최고 순위와 최저 순위]
      *  로또 번호를 담은 배열 lottos, 당첨 번호를 담은 배열 win_nums가 매개변수로 주어집니다.
@@ -18,11 +20,11 @@ public class MatchingLottoClass {
      */
 
     public int[] solution(int[] lottos, int[] win_nums) {
-        int[] answer = getLottos(lottos, win_nums);
+        int[] answer = getAnswer(lottos, win_nums);
         return answer;
     }
 
-    public int[] getLottos(int[] lottos, int[] win_nums) {
+    public int[] getAnswer(int[] lottos, int[] win_nums) {
         Map<Integer, Integer> gradeMap = new HashMap<>(){{
             put(6, 1);
             put(5, 2);
